@@ -1,0 +1,73 @@
+///////////////////////////////////////////////////////////
+//           Jam-Es.com
+//////////////////////////////////////////////////////////
+
+[
+
+	// Togle Terminus panel (at the bottom of the screen) Open/Closed when Alt+' is pressed
+	{
+		// The key press to look out for
+		"keys": ["alt+`"],
+
+		// Toggle the panel
+		"command": "toggle_terminus_panel"
+	},
+
+	// Open cmd.exe Command Prompt when Alt+1 is pressed
+	{
+		// The key press to look out for
+		"keys": ["alt+1"],
+
+		// Tell terminus to open something
+		"command": "terminus_open",
+
+		// Tell terminus what to open
+		"args" : {
+			// Open Command Prompt
+         	"cmd": "cmd.exe",
+
+         	// Provide Command Prompt with Current Working Directory
+            "cwd": "${file_path:${folder}}",
+
+            // Tell terminus to put it in the panel at the bottom of the screen
+            "panel_name": "Terminus"
+        }
+	},
+
+	// Open git bash when Alt+2 is pressed
+	{
+		"keys": ["alt+2"],
+		"command": "terminus_open",
+         "args" : {
+         	// Tell terminus to use Git Bash
+         	// Replace the path below with your path to Git Bash
+         	"cmd": ["C:\\Program Files\\Git\\bin\\bash.exe", "-i", "-l"],
+
+            "cwd": "${file_path:${folder}}",
+            "panel_name": "Terminus"
+         }
+	},
+
+	// Repitition of the above adding Alt+b and Alt+b shortcuts
+	{
+		"keys": ["alt+c"],
+		"command": "terminus_open",
+		"args" : {
+         	"cmd": "cmd.exe",
+            "cwd": "${file_path:${folder}}",
+            "title": "Command Prompt",
+            "panel_name": "Terminus"
+        }
+	},
+	{
+		"keys": ["alt+b"],
+		"command": "terminus_open",
+         "args" : {
+         	"cmd": ["C:\\Program Files\\Git\\bin\\bash.exe", "-i", "-l"],
+            "cwd": "${file_path:${folder}}",
+            "title": "Git Bash",
+            "panel_name": "Terminus"
+         }
+	},
+
+]

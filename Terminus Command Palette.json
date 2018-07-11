@@ -1,0 +1,67 @@
+///////////////////////////////////////////////////////////
+//           Jam-Es.com
+//////////////////////////////////////////////////////////
+
+// This defines all the commands you can use
+// press Ctrl Shift P and type them in
+
+[
+
+	// This item opens Command Prompt in a new window when the command 'Command Prompt (new Window)' is typed in
+	{
+		 // The command to type in:
+         "caption": "Command Prompt (new Window)",
+
+         // Tell terminus to open something:
+         "command": "terminus_open",
+
+         // Tell terminus what to open:
+         "args"   : {
+         	// Tell terminus to open Command Prompt
+         	"cmd": "cmd.exe",
+         	// Tell command prompt what the current working directory is
+            "cwd": "${file_path:${folder}}",
+            // Give the window a title:
+            "title": "Command Prompt"
+         }
+    },
+
+    // Opens Command Prompt in the panel at the bottom of the screen when this command is typed in
+    {
+         "caption": "Command Prompt (panel)",
+         "command": "terminus_open",
+         "args"   : {
+         	"cmd": "cmd.exe",
+            "cwd": "${file_path:${folder}}",
+            "title": "Command Prompt",
+
+            // This additional line tells Terminus that we want to open it in the panel at the bottom of the screen and not a new window
+            "panel_name": "Terminus"
+         }
+    },
+
+    // Opens Git Bash in new window when command is typed in
+	{
+         "caption": "Git Bash (new Window)",
+         "command": "terminus_open",
+         "args"   : {
+         	// Remember to change the following path
+         	"cmd": ["C:\\Program Files\\Git\\bin\\bash.exe", "-i", "-l"],
+            "cwd": "${file_path:${folder}}",
+            "title": "Git Bash"
+         }
+    },
+
+    // Opens Git Bash in panel when command is typed in
+    {
+         "caption": "Git Bash (panel)",
+         "command": "terminus_open",
+         "args"   : {
+         	// Remember to change the following path
+         	"cmd": ["C:\\Program Files\\Git\\bin\\bash.exe", "-i", "-l"],
+            "cwd": "${file_path:${folder}}",
+            "title": "Git Bash",
+            "panel_name": "Terminus"
+         }
+    }
+]
