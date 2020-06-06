@@ -48,7 +48,7 @@
          }
 	},
 
-	// Repitition of the above adding Alt+b and Alt+b shortcuts
+	// Repitition of the above adding Alt+c and Alt+b shortcuts
 	{
 		"keys": ["alt+c"],
 		"command": "terminus_open",
