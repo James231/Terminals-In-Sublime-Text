@@ -4,7 +4,7 @@
 
 [
 
-	// Togle Terminus panel (at the bottom of the screen) Open/Closed when Alt+' is pressed
+	// Toggle Terminus panel (at the bottom of the screen) Open/Closed when Alt+' is pressed
 	{
 		// The key press to look out for
 		"keys": ["alt+`"],
