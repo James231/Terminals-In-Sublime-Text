@@ -42,11 +42,11 @@ But, if your shells are not Command Prompt based (open externally from Command P
 Open the Command Palette (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>) and type `Terminus Key Bindings`. Then copy the contents of the `Terminus Key Bindings.json` file into the right hand side of the view and save it. This should add keyboard shortcuts to your shells. Again if you are using Git Bash, the path to it may need correcting.  
   
 The following shorcuts should work:
-* <kbd>Ctrl</kbd>+<kbd>\`</kbd> - Toggles the Panel at the bottom of the screen open and closed
-* <kbd>Ctrl</kbd>+<kbd>1</kbd> - Opens Command Prompt in the Panel
-* <kbd>Ctrl</kbd>+<kbd>2</kbd> - Opens Git Bash in the Panel
-* <kbd>Ctrl</kbd>+<kbd>c</kbd> - Opens Command Prompt in the Panel
-* <kbd>Ctrl</kbd>+<kbd>b</kbd> - Opens Git Bash in the Panel  
+* <kbd>Alt</kbd>+<kbd>\`</kbd> - Toggles the Panel at the bottom of the screen open and closed
+* <kbd>Alt</kbd>+<kbd>1</kbd> - Opens Command Prompt in the Panel
+* <kbd>Alt</kbd>+<kbd>2</kbd> - Opens Git Bash in the Panel
+* <kbd>Alt</kbd>+<kbd>c</kbd> - Opens Command Prompt in the Panel
+* <kbd>Alt</kbd>+<kbd>b</kbd> - Opens Git Bash in the Panel  
   
 The code is well commented so it should be clear how it works. Again you can copy and paste the code to add your own shortcuts.  
   
